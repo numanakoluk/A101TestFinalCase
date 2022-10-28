@@ -20,12 +20,14 @@ public class Methods extends Driver {
         return webElement;
     }
 
+
     public void navigateToUrl(String url) {
         driver.get(configReader.getProperty(url));
     }
 
     public void clickToElement(String locatorName) {
         try {
+            Thread.sleep(2000);
             findElement(locatorName).click();
         } catch (Exception e) {
             e.printStackTrace();
