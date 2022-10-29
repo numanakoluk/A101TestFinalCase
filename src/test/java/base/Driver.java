@@ -1,6 +1,8 @@
 package base;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -18,8 +20,8 @@ public class Driver {
     protected ConfigReader configReader = new ConfigReader("config");
     protected ElementReader elementReader = new ElementReader("element");
 
-    public void initializeDriver() {
 
+    public void initializeDriver() {
         System.setProperty("webdriver.chrome.driver", "Driver/chromedriver.exe");
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         ChromeOptions options = new ChromeOptions();
