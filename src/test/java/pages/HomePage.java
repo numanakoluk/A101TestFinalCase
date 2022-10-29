@@ -27,4 +27,9 @@ public class HomePage extends Methods {
         compareTextWithExpected("home_logged_in_dropdown");
     }
 
+    public void clickAcceptCookies() {
+        clickToElement("cookies_accept_button");
+        waitForSecond(2000);
+    }
+
 }
