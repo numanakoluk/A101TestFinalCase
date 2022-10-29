@@ -1,6 +1,7 @@
 package pages;
 
 import methods.Methods;
+import org.openqa.selenium.support.ui.Wait;
 
 public class HomePage extends Methods {
 
@@ -10,6 +11,7 @@ public class HomePage extends Methods {
 
     public void navigateToLogIn() {
         clickToElement("home_login_dropdown");
+        waitForSecond(2000);
         clickToElement("home_login_item");
     }
 

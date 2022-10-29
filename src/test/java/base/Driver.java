@@ -12,6 +12,7 @@ import utils.ConfigReader;
 import utils.ElementReader;
 
 import java.io.File;
+import java.util.logging.Level;
 
 public class Driver {
     public static WebDriverWait wait;
@@ -22,7 +23,11 @@ public class Driver {
 
 
     public void initializeDriver() {
-        System.setProperty("webdriver.chrome.driver", "Driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "Driverss/chromedriver.exe");
+        //Chrome Info Close
+        System.setProperty("webdriver.chrome.silentOutput", "true");
+        //W3S Info Close
+        java.util.logging.Logger.getLogger("org.openqa.selenium").setLevel(Level.OFF);
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         ChromeOptions options = new ChromeOptions();
         //Notifications Close
@@ -36,7 +41,6 @@ public class Driver {
         options.addArguments("--disable-extentions");
         options.merge(desiredCapabilities);
         driver = new ChromeDriver(options);
-        driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.get("https://www.hepsiburada.com/");
     }

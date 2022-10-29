@@ -12,7 +12,6 @@ public class Hooks extends Driver {
     @Before
     public void setUp(){
         initializeDriver();
-        LOGGER.info("Test Başladı");
     }
 
     @After

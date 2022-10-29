@@ -27,7 +27,7 @@ public class TestSteps {
     @Given("^User searches for \"([^\"]*)\"$")
     public void user_searches_for(String text) {
         homePage.searchForProduct(text);
-        LOGGER.info("Kullanıcı: +" + text +" kelimesini arama yaptı.");
+        LOGGER.info("Kullanıcı: " + text +" kelimesini arama yaptı.");
     }
 
     @Given("^User chooses product$")
@@ -51,8 +51,9 @@ public class TestSteps {
     @Given("^User logs in with credentials$")
     public void user_logs_in_with_credentials() {
         homePage.navigateToLogIn();
-        LOGGER.info("Kullanıcı Giriş İşlemi Yapılır(GMAIL ile Giriş).");
         loginPage.login();
+        LOGGER.info("Kullanıcı Giriş İşlemi Yapılır(GMAIL ile Giriş).");
+
     }
 
     @Given("^User should be logged in$")
