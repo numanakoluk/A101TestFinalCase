@@ -8,6 +8,7 @@ Feature: Hepsiburada Case Study
     * User adds two product from different shops
     * Products should be added to shopping cart
 
+
   @Regression
   Scenario: Log in and add product to shopping cart
     * User navigates to home page

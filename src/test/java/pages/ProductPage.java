@@ -1,8 +1,12 @@
 package pages;
 
 import methods.Methods;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 
 public class ProductPage extends Methods {
+
 
     public void chooseProduct() {
         waitForSecond(2000);
@@ -12,11 +16,11 @@ public class ProductPage extends Methods {
     }
 
     public void addProducts() {
-        clickToElement("product_first_add_button");
+        clickToElement2("product_first_add_button");
         waitForSecond(5000);
         clickToElement("product_close_modal_icon");
         clickToElement("product_second_add_button");
-        waitForSecond(2000);
+        waitForSecond(5000);
         clickToElement("product_shopping_cart_button");
     }
 

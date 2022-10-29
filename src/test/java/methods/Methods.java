@@ -19,6 +19,14 @@ public class Methods extends Driver {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center', inline: 'center'})", webElement);
         return webElement;
     }
+    public WebElement findElement2(String locatorName) {
+        wait = new WebDriverWait(driver, 10);
+        By locator = elementReader.getElementValue(locatorName);
+        WebElement webElement = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", webElement);
+        return webElement;
+    }
+
 
 
     public void navigateToUrl(String url) {
@@ -27,8 +35,15 @@ public class Methods extends Driver {
 
     public void clickToElement(String locatorName) {
         try {
-            Thread.sleep(2000);
             findElement(locatorName).click();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void clickToElement2(String locatorName) {
+        try {
+            findElement2(locatorName).click();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -38,6 +53,7 @@ public class Methods extends Driver {
         String text = findElement(locatorName).getText();
         assertThat(expectedText).isEqualTo(text);
     }
+
 
     public String getTextFromElement(String locatorName) {
         return findElement(locatorName).getText();
