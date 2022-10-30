@@ -1,4 +1,4 @@
-Feature: A101 Final Case Study
+Feature: Hepsiburada Case Study1
 
   @Regression
   Scenario: Add product to shopping cart
