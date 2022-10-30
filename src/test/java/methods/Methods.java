@@ -1,6 +1,8 @@
 package methods;
 
 import base.Driver;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -8,10 +10,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class Methods extends Driver {
+
+    private static final Logger LOGGER = LogManager.getLogger(Methods.class);
     public WebElement findElement(String locatorName) {
         wait = new WebDriverWait(driver, 10);
         By locator = elementReader.getElementValue(locatorName);
@@ -50,8 +55,10 @@ public class Methods extends Driver {
     }
 
     public void compareTextWithExpected(String locatorName) {
-        String text = findElement(locatorName).getText();
+        String text = findElement(locatorName).getText();;
+        text.toLowerCase(Locale.ENGLISH);
         assertThat(expectedText).isEqualTo(text);
+        LOGGER.info("Beklenen: "+ expectedText + " Gerçekleşen: " + text);
     }
 
 

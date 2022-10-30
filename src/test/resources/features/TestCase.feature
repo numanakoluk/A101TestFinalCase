@@ -2,7 +2,7 @@ Feature: Hepsiburada Case Study
 
   @Regression
   Scenario: Add product to shopping cart
-    * Cookies_are_expected
+    * Cookies are expected
     * User navigates to home page
     * User searches for "SAMSUNG"
     * User chooses product
@@ -12,7 +12,7 @@ Feature: Hepsiburada Case Study
 
   @Regression
   Scenario: Log in and add product to shopping cart
-    * Cookies_are_expected
+    * Cookies are expected
     * User navigates to home page
     * User logs in with credentials
     * User should be logged in
