@@ -1,22 +1,30 @@
-Feature: Hepsiburada Case Study
+Feature: Hepsiburada.com üzerinden sepete ürün eklenmesi
 
   @Regression
-  Scenario: Add product to shopping cart
-    * Cookies are expected
-    * User navigates to home page
-    * User searches for "SAMSUNG"
-    * User chooses product
-    * User adds two product from different shops
-    * Products should be added to shopping cart
+  Scenario Outline: Kullanıcı girişi yapılmadan belirtilen ürünü sepete ekleme
+    * Cerezler kabul edilir
+    * Kullanici ana sayfayi ziyaret eder
+    * Kullanici kelimesini aratir "<text>"
+    * Kullanici urunleri secer
+    * Kullanici iki farkli magazadan urun ekler
+    * Secilen urunun dogru olarak eklendigi sepetim sayfasında dogrulanır
+
+    Examples: text search
+      | text    |
+      | SAMSUNG |
 
 
   @Regression
-  Scenario: Log in and add product to shopping cart
-    * Cookies are expected
-    * User navigates to home page
-    * User logs in with credentials
-    * User should be logged in
-    * User searches for "SAMSUNG"
-    * User chooses product
-    * User adds two product from different shops
-    * Products should be added to shopping cart
+  Scenario Outline: Kullanici girisi yapılarak sepete ürün eklenmesi
+    * Cerezler kabul edilir
+    * Kullanici ana sayfayi ziyaret eder
+    * Kullanici kimlik bilgileriyle oturum açar
+    * Kullanici girisi ana sayfada dogrulanir
+    * Kullanici kelimesini aratir "<text>"
+    * Kullanici urunleri secer
+    * Kullanici iki farkli magazadan urun ekler
+    * Secilen urunun dogru olarak eklendigi sepetim sayfasında dogrulanır
+
+    Examples: text search
+      | text    |
+      | SAMSUNG |

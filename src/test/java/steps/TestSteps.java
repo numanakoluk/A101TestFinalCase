@@ -18,50 +18,50 @@ public class TestSteps {
     ProductPage productPage = new ProductPage();
     CartPage cartPage = new CartPage();
 
-    @Given("^User navigates to home page$")
-    public void user_navigates_to_home_page() {
+    @Given("^Kullanici ana sayfayi ziyaret eder$")
+    public void kullanici_ana_sayfayi_ziyaret_eder() {
         homePage.navigateToHomePage();
         LOGGER.info("Kullanıcı Hepsiburada.com sitesini Ziyaret Eder.");
     }
 
-    @Given("^User searches for \"([^\"]*)\"$")
-    public void user_searches_for(String text) {
+    @Given("^Kullanici kelimesini aratir \"([^\"]*)\"$")
+    public void kullanici_kelimesini_aratir(String text) {
         homePage.searchForProduct(text);
         LOGGER.info("Kullanıcı: " + text +" kelimesini arama yaptı.");
     }
 
-    @Given("^User chooses product$")
-    public void user_chooses_product() {
+    @Given("^Kullanici urunleri secer$")
+    public void kullanici_urunleri_secer() {
         productPage.chooseProduct();
         LOGGER.info("Kullanıcı seçilen ürünü aradı ve tıkladı.");
     }
-    @Given("^Cookies are expected$")
-    public void cookies_are_expected() {
+    @Given("^Cerezler kabul edilir$")
+    public void cerezler_kabul_edilir() {
         homePage.clickAcceptCookies();
         LOGGER.info(" Çerezler kabul edildi.");
     }
-    @Given("^User adds two product from different shops$")
-    public void user_adds_two_product_from_different_shops() {
+    @Given("^Kullanici iki farkli magazadan urun ekler$")
+    public void kullanici_iki_farkli_magazadan_urun_ekler() {
         productPage.addProducts();
         LOGGER.info("Seçilen ürün için 2 tane farklı satıcıdan ürün seçilip sepete eklenir.");
     }
 
-    @Given("^Products should be added to shopping cart$")
-    public void products_should_be_added_to_shopping_cart() {
+    @Given("^Secilen urunun dogru olarak eklendigi sepetim sayfasında dogrulanır$")
+    public void secilen_urunun_dogru_olarak_eklendigi_sepetim_sayfasinda_dogrulanir() {
         cartPage.checkForProducts();
         LOGGER.info("Seçilen ürünün doğru olarak eklendiği ‘Sepetim’ sayfasında(Assertion) ile doğrulandı.");
     }
 
-    @Given("^User logs in with credentials$")
-    public void user_logs_in_with_credentials() {
+    @Given("^Kullanici kimlik bilgileriyle oturum açar$")
+    public void kullanici_kimlik_bilgileriyle_oturum_acar() {
         homePage.navigateToLogIn();
         loginPage.login();
         LOGGER.info("Kullanıcı Giriş İşlemi Yapılır(GMAIL ile Giriş).");
 
     }
 
-    @Given("^User should be logged in$")
-    public void user_should_be_logged_in() {
+    @Given("^Kullanici girisi ana sayfada dogrulanir$")
+    public void kullanici_girisi_ana_sayfada_dogrulanir() {
         LOGGER.info("Yönlendirmeden sonra anasayfada(Assertion) ile kullanıcı giriş işleminin yapıldığı doğrulanır.");
         homePage.checkForLogin();
     }
