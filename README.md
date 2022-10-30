@@ -25,11 +25,11 @@
 
 # Log4j.properties 
 
-![image](https://user-images.githubusercontent.com/89300182/198846604-13bd62b7-4bf0-4394-93b4-1924e91280d2.png) 
+![image](https://user-images.githubusercontent.com/89300182/198880629-c5844989-ab5e-4753-9fcc-e364e2042b72.png)
 
-# cucumber.html
+# cucumber.html(Reports)
 
-![image](https://user-images.githubusercontent.com/89300182/198846761-ab0a25df-cdc0-4e5e-ae9b-a8b9641309eb.png)
+![image](https://user-images.githubusercontent.com/89300182/198880702-725d4f21-1213-47e7-93a2-adcae6ca1fa8.png)
 
 # pom.xml
  
