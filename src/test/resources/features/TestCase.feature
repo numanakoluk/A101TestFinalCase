@@ -1,4 +1,4 @@
-Feature: Hepsiburada Case Study1
+Feature: Hepsiburada Case Study
 
   @Regression
   Scenario: Add product to shopping cart
