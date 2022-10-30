@@ -58,7 +58,7 @@ public class Methods extends Driver {
         String text = findElement(locatorName).getText();;
         text.toLowerCase(Locale.ENGLISH);
         assertThat(expectedText).isEqualTo(text);
-        LOGGER.info("Beklenen: "+ expectedText + " Gerçekleşen: " + text);
+        LOGGER.info("Assertion Beklenen: "+ expectedText + " Gerçekleşen: " + text);
     }
 
 
