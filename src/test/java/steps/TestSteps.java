@@ -21,7 +21,12 @@ public class TestSteps {
     @Given("^User navigates to home page$")
     public void user_navigates_to_home_page() {
         homePage.navigateToHomePage();
-        LOGGER.info("Kullanıcı Hepsiburada.com sitesini Ziyaret Eder.");
+        LOGGER.info("Kullanıcı Hepsiburada.com sitesini Ziyaret Etti.");
+    }
+    @Given("^Cookies are expected$")
+    public void cookies_are_expected() {
+        homePage.clickAcceptCookies();
+        LOGGER.info(" Çerezler kabul edildi.");
     }
 
     @Given("^User searches for \"([^\"]*)\"$")
@@ -35,11 +40,7 @@ public class TestSteps {
         productPage.chooseProduct();
         LOGGER.info("Kullanıcı seçilen ürünü aradı ve tıkladı.");
     }
-    @Given("^Cookies are expected$")
-    public void cookies_are_expected() {
-        homePage.clickAcceptCookies();
-        LOGGER.info(" Çerezler kabul edildi.");
-    }
+
     @Given("^User adds two product from different shops$")
     public void user_adds_two_product_from_different_shops() {
         productPage.addProducts();

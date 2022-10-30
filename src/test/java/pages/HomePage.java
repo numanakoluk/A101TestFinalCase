@@ -22,6 +22,7 @@ public class HomePage extends Methods {
     }
 
     public void checkForLogin() {
+        waitForSecond(2000);
         elementIsDisplayed("home_logged_in_dropdown");
         expectedText = getTextFromElement("home_logged_in_dropdown");
         compareTextWithExpected("home_logged_in_dropdown");

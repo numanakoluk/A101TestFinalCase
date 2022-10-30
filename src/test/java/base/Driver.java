@@ -23,7 +23,7 @@ public class Driver {
 
 
     public void initializeDriver() {
-A        System.setProperty("webdriver.chrome.driver", "Driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "Driver/chromedriver.exe");
         //Chrome Info Close
         System.setProperty("webdriver.chrome.silentOutput", "true");
         //W3S Info Close
