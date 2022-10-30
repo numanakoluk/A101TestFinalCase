@@ -1,0 +1,22 @@
+  2022-10-30 16:15:51 INFO  Driver:29 -  Çerezler kabul edildi.
+  2022-10-30 16:15:54 INFO  Driver:24 - Kullanıcı Hepsiburada.com sitesini Ziyaret Etti.
+  2022-10-30 16:15:54 INFO  Driver:35 - Kullanıcı: SAMSUNG kelimesini arama yaptı.
+  2022-10-30 16:15:57 INFO  Driver:41 - Kullanıcı seçilen ürünü aradı ve tıkladı.
+  2022-10-30 16:16:11 INFO  Driver:47 - Seçilen ürün için 2 tane farklı satıcıdan ürün seçilip sepete eklenir.
+  2022-10-30 16:16:12 INFO  Methods:61 - Assertion Beklenen: Favorimpazarlama Gerçekleşen: Favorimpazarlama
+  2022-10-30 16:16:14 INFO  Methods:61 - Assertion Beklenen: Marteknoloji̇ Gerçekleşen: Marteknoloji̇
+  2022-10-30 16:16:14 INFO  Driver:53 - Seçilen ürünün doğru olarak eklendiği ‘Sepetim’ sayfasında(Assertion) ile doğrulandı.
+  2022-10-30 16:16:14 INFO  Driver:24 - Test Başarılı
+  2022-10-30 16:16:20 INFO  Driver:29 -  Çerezler kabul edildi.
+  2022-10-30 16:16:23 INFO  Driver:24 - Kullanıcı Hepsiburada.com sitesini Ziyaret Etti.
+  2022-10-30 16:16:30 INFO  Driver:60 - Kullanıcı Giriş İşlemi Yapılır(GMAIL ile Giriş).
+  2022-10-30 16:16:30 INFO  Driver:66 - Yönlendirmeden sonra anasayfada(Assertion) ile kullanıcı giriş işleminin yapıldığı doğrulanır.
+  2022-10-30 16:16:34 INFO  Methods:61 - Assertion Beklenen: Numan Akoluk Gerçekleşen: Numan Akoluk
+  2022-10-30 16:16:35 INFO  Driver:35 - Kullanıcı: SAMSUNG kelimesini arama yaptı.
+  2022-10-30 16:16:38 INFO  Driver:41 - Kullanıcı seçilen ürünü aradı ve tıkladı.
+  2022-10-30 16:16:52 INFO  Driver:47 - Seçilen ürün için 2 tane farklı satıcıdan ürün seçilip sepete eklenir.
+  2022-10-30 16:16:53 INFO  Methods:61 - Assertion Beklenen: Favorimpazarlama Gerçekleşen: Favorimpazarlama
+  2022-10-30 16:16:55 INFO  Methods:61 - Assertion Beklenen: Marteknoloji̇ Gerçekleşen: Marteknoloji̇
+  2022-10-30 16:16:55 INFO  Driver:53 - Seçilen ürünün doğru olarak eklendiği ‘Sepetim’ sayfasında(Assertion) ile doğrulandı.
+  2022-10-30 16:16:56 INFO  Driver:24 - Test Başarılı
+  
