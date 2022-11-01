@@ -1,9 +1,6 @@
 package pages;
 
-import methods.Methods;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
+import PageObject.Methods;
 
 public class ProductPage extends Methods {
 
@@ -16,7 +13,7 @@ public class ProductPage extends Methods {
     }
 
     public void addProducts() {
-        clickToElement2("product_first_add_button");
+        clickToElementProduct("product_first_add_button");
         waitForSecond(5000);
         clickToElement("product_close_modal_icon");
         clickToElement("product_second_add_button");

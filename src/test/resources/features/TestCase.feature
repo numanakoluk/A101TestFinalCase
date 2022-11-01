@@ -1,4 +1,4 @@
-Feature: Hepsiburada.com üzerinden sepete ürün eklenmesi
+Feature: Hepsiburada.com uzerinden sepete ürün eklenmesi
 
   @Regression
   Scenario Outline: Kullanıcı girişi yapılmadan belirtilen ürünü sepete ekleme
@@ -9,10 +9,9 @@ Feature: Hepsiburada.com üzerinden sepete ürün eklenmesi
     * Kullanici iki farkli magazadan urun ekler
     * Secilen urunun dogru olarak eklendigi sepetim sayfasında dogrulanır
 
-    Examples: text search
+    Examples: secilecek urun
       | text    |
       | SAMSUNG |
-
 
   @Regression
   Scenario Outline: Kullanici girisi yapılarak sepete ürün eklenmesi
@@ -25,6 +24,6 @@ Feature: Hepsiburada.com üzerinden sepete ürün eklenmesi
     * Kullanici iki farkli magazadan urun ekler
     * Secilen urunun dogru olarak eklendigi sepetim sayfasında dogrulanır
 
-    Examples: text search
+    Examples: secilecek urun
       | text    |
-      | SAMSUNG |
+      | IPHONE  |

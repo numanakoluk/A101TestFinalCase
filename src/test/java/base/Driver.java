@@ -31,17 +31,15 @@ public class Driver {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         ChromeOptions options = new ChromeOptions();
         //Notifications Close
-        options.addArguments("--disable-notifications");
         options.addArguments("--incognito");
         options.addArguments("--start-maximized");
         options.addArguments("--ignore-certificate-errors");
-        options.addArguments("allow-insecure-localhost");
+        options.addArguments("--disable-notifications");
         options.addArguments("--acceptInsecureCerts");
         options.addArguments("--disable-blink-features=AutomationControlled");
-        options.addArguments("--disable-extentions");
+        options.addArguments("chrome.switches","--disable-extensions");
         options.merge(desiredCapabilities);
         driver = new ChromeDriver(options);
-        driver.manage().deleteAllCookies();
         driver.get("https://www.hepsiburada.com/");
     }
 

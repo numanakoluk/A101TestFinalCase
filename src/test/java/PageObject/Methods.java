@@ -1,4 +1,4 @@
-package methods;
+package PageObject;
 
 import base.Driver;
 import org.apache.log4j.LogManager;
@@ -24,7 +24,7 @@ public class Methods extends Driver {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center', inline: 'center'})", webElement);
         return webElement;
     }
-    public WebElement findElement2(String locatorName) {
+    public WebElement findElementProduct(String locatorName) {
         wait = new WebDriverWait(driver, 10);
         By locator = elementReader.getElementValue(locatorName);
         WebElement webElement = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
@@ -38,6 +38,8 @@ public class Methods extends Driver {
         driver.get(configReader.getProperty(url));
     }
 
+
+
     public void clickToElement(String locatorName) {
         try {
             findElement(locatorName).click();
@@ -46,9 +48,9 @@ public class Methods extends Driver {
         }
     }
 
-    public void clickToElement2(String locatorName) {
+    public void clickToElementProduct(String locatorName) {
         try {
-            findElement2(locatorName).click();
+            findElementProduct(locatorName).click();
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -1,7 +1,6 @@
 package pages;
 
-import methods.Methods;
-import org.openqa.selenium.support.ui.Wait;
+import PageObject.Methods;
 
 public class HomePage extends Methods {
 

@@ -1,6 +1,6 @@
 package pages;
 
-import methods.Methods;
+import PageObject.Methods;
 
 public class CartPage extends Methods {
 
