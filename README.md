@@ -14,6 +14,7 @@
 7. [+] **Seçilen ürünün doğru olarak eklendiği ‘Sepetim’ sayfasında doğrulanır.**
 
 
+
 # AllSteps Hepsiburada WithNothLogin Scenario 
 **Tags:chrome**
 1. [+] **Çerezler Kabul Edilir.**
@@ -21,6 +22,10 @@
 3. [+] **Kullanıcı, Arama sonucunda ekrana gelen ürün listesinden (veya tek bir sonuç da dönmüş olabilir) ürün seçer..**
 4. [+] **Seçilen ürün için 2 tane farklı satıcıdan ürün seçilip sepete eklenir.**
 5. [+] **Seçilen ürünün doğru olarak eklendiği ‘Sepetim’ sayfasında doğrulanır.**
+
+
+
+https://user-images.githubusercontent.com/89300182/199294073-0333d4af-1972-45be-9c48-905d4198ad60.mp4
 
 
 # Log4j.properties 
