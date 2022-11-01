@@ -7,7 +7,7 @@
 **Tags:chrome**
 1. [+] **Çerezler Kabul Edilir.**
 2. [+] **Kullanıcı Hepsiburada.com sitesini Ziyaret Eder.**
-3. [+] **Kullanıcı Giriş İşlemi Yapılır(Facebook ile giriş).**
+3. [+] **Kullanıcı Giriş İşlemi Yapılır.**
 4. [+] **Yönlendirmeden sonra anasayfada kullanıcı giriş işleminin yapıldığı doğrulanır.**
 5. [+] **Kullanıcı, Arama sonucunda ekrana gelen ürün listesinden (veya tek bir sonuç da dönmüş olabilir) ürün seçer..**
 6. [+] **Seçilen ürün için 2 tane farklı satıcıdan ürün seçilip sepete eklenir.**
