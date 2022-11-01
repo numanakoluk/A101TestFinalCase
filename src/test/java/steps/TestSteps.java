@@ -38,7 +38,7 @@ public class TestSteps {
     @Given("^Cerezler kabul edilir$")
     public void cerezler_kabul_edilir() {
         homePage.clickAcceptCookies();
-        LOGGER.info(" Çerezler kabul edildi.");
+        LOGGER.info(" Çerezler kabul edildi..");
     }
     @Given("^Kullanici iki farkli magazadan urun ekler$")
     public void kullanici_iki_farkli_magazadan_urun_ekler() {
