@@ -23,15 +23,16 @@
 4. [+] **Seçilen ürün için 2 tane farklı satıcıdan ürün seçilip sepete eklenir.**
 5. [+] **Seçilen ürünün doğru olarak eklendiği ‘Sepetim’ sayfasında doğrulanır.**
 
-
-
-https://user-images.githubusercontent.com/89300182/199294073-0333d4af-1972-45be-9c48-905d4198ad60.mp4
-
-# Presentation
+# **Presentation
 https://www.loom.com/share/c5bc89c0480849ba835e0dd39eadfb81
 
-# Log4j.properties 
+# **Demo
+https://user-images.githubusercontent.com/89300182/199294073-0333d4af-1972-45be-9c48-905d4198ad60.mp4
 
+# **Project using just JUNIT/Maaven with same scenario 
+https://github.com/numanakoluk/A101TestFinalCaseJunit
+
+# Log4j.properties 
 ![image](https://user-images.githubusercontent.com/89300182/198880629-c5844989-ab5e-4753-9fcc-e364e2042b72.png)
 
 # cucumber.html(Reports)
