@@ -2,7 +2,7 @@
  HepsiBuradaWebTestProject
 </div>
 
-# **SELENIUM //Intelij //MVN //JUNIT //CUCUMBER 
+# **SELENIUM WEB //Intelij //MVN //JUNIT // TESTNG // CUCUMBER 
 # AllSteps Hepsiburada WithLogin Scenario 
 **Tags:chrome**
 1. [+] **Çerezler Kabul Edilir.**
